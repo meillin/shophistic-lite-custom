@@ -1,0 +1,21 @@
+.logo_container {
+	a > * {
+		vertical-align: middle;
+	}
+	svg {
+		width: 100px;
+
+		@media (min-width: @screen-sm-min) {
+			width: 150px;
+		}
+
+		@media (min-width: @screen-md-min) {
+			width: 200px;
+		}
+	}
+	small {
+		font-size: 16px;
+		font-weight: normal;
+		color: @logoColor;
+	}
+}
