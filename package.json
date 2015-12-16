@@ -1,0 +1,25 @@
+{
+  "name": "shophistic-lite",
+  "version": "1.0.0",
+  "description": "My LazyDaisy theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meillin/shophistic-lite-custom.git"
+  },
+  "keywords": [
+    "Shop"
+  ],
+  "author": "Meilan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meillin/shophistic-lite-custom/issues"
+  },
+  "homepage": "https://github.com/meillin/shophistic-lite-custom#readme",
+  "devDependencies": {
+    "gulp-watch": "^4.3.5"
+  }
+}
