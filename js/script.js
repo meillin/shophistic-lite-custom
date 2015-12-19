@@ -5,10 +5,10 @@
 
 		//Anomation at load -----------------
 		Pace.on('done', function(event) {
-				
+
 		});//Pace
-			
-			//Scroll to top		 
+
+			//Scroll to top
 			$(".ql_scroll_top").click(function() {
 			  $("html, body").animate({ scrollTop: 0 }, "slow");
 			  return false;
@@ -91,7 +91,7 @@
 			$ql_woo_thumbnails.on('click', function(event) {
 				event.preventDefault();
 			});
-			$ql_woo_thumbnails.hover(function() {				
+			$ql_woo_thumbnails.hover(function() {
 				$ql_woo_thumbnails.removeClass("current");
 				$(this).addClass("current");
 				ql_owl_woo.trigger('to.owl.carousel', $(this).index());
@@ -107,12 +107,12 @@
 			});
 			//PhotoSwipe for WooCommerce Images
 			initPhotoSwipe('.ql_main_images', 'img', ql_owl_woo);
-			/*			
+			/*
 			//===========================================================
 			*/
 
 
-			
+
 			/*
 			// WooCommerce Custom Variations
 			//===========================================================
@@ -163,7 +163,7 @@
 				$(this).parents(".ql_select_id").find("a").removeClass("current");
 				$(this).addClass("current");
 			});
-			/*			
+			/*
 			//===========================================================
 			*/
 
@@ -188,7 +188,7 @@
 						$a_i.removeClass("fa-plus").addClass("fa-minus");
 				});
 				//End Accordion Icons (+ & -) Bootstrap--------------<
-				
+
 
 				$('.dropdown-toggle').dropdown();
 				//Tabs for Bootstrap-------------->
@@ -197,7 +197,7 @@
 				  	$(this).tab('show');
 				});
 
-				
+
 
 				//Nav Menu for Bootstrap-------------->
 				// $(".jqueryslidemenu ul.nav > li .children, .jqueryslidemenu ul.nav > li .sub-menu").each(function(index) {
@@ -209,39 +209,43 @@
 
 
 
-				
-				
-			
-				
-				
-				
+
+
+
+
+
+
 				//Tooltips
 				$("*[rel^='tooltip']").tooltip();
 				$('*[data-toggle="tooltip"]').tooltip();
-				 
-			
 
-				
+
+
+
 				//Quick Contact Form styling
 				$(".quick_contact input").click(function(){
 						$(this).parent().removeClass('has-error');
 				});
-				
-				
-				
-				  
+
+
+
+
 				//Sidebar Menu Function
 				$('#sidebar .widget ul:not(.product-categories) li ul').parent().addClass('hasChildren').append("<i class='fa fa-angle-down'></i>");
 				var children;
+
+				// Meilan commonted out the disable the categories slideup and down effect
+				/*
 				$("#sidebar .widget ul:not(.product-categories) li").hoverIntent(
 					function () {
 						children = $(this).children("ul");
 						if($(children).length > 0){ $(children).stop(true, true).slideDown('fast'); }
-					}, 
+					},
 					function () {
 					  $(this).children('ul').stop(true, true).slideUp(500);
 					}
 				);
+				*/
 				//Footer Menu Function
 				$('footer .widget ul:not(.product-categories) li ul').parent().addClass('hasChildren').append("<i class='fa fa-angle-down'></i>");
 				var children;
@@ -249,12 +253,12 @@
 					function () {
 						children = $(this).children("ul");
 						if($(children).length > 0){ $(children).stop(true, true).slideDown('fast'); }
-					}, 
+					},
 					function () {
 					  $(this).children('ul').stop(true, true).slideUp(500);
 					}
-				);	
-				
+				);
+
 
 
 
