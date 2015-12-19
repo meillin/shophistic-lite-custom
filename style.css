@@ -2042,7 +2042,7 @@ ol.commentlist .comment-entry span.arrow_comment {
 @media (max-width: 767px) {
   .woocommerce .products .product,
   .woocommerce-page .products .product {
-    width: 98%!important;
+    width: 48%!important;
     margin-right: 0!important;
   }
 }
