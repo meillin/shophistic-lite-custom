@@ -19,7 +19,7 @@ if ( ! function_exists( 'shophistic_lite_new_content_more' ) ){
 	function shophistic_lite_new_content_more($more) {
 	       global $post;
 	       return ' <br><a href="' . esc_url( get_permalink() ) . '" class="more-link btn btn-ql">'.__('Read more', 'shophistic-lite').'</a>';
-	}   
+	}
 }// end function_exists
 	add_filter( 'the_content_more_link', 'shophistic_lite_new_content_more' );
 
@@ -40,10 +40,10 @@ endif;
  */
 if ( ! function_exists( 'shophistic_lite_content_check_sidebar' ) ){
 	function shophistic_lite_content_check_sidebar() {
-		if ( is_active_sidebar( 'sidebar-widgets' ) ) { 
-            return "col-md-10";
+		if ( is_active_sidebar( 'sidebar-widgets' ) ) {
+            return "col-sm-8 col-md-10";
         }else{
-            return "col-md-12";
+            return "col-sm-12";
         }
     }
 }// end function_exists
