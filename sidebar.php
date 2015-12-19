@@ -1,9 +1,9 @@
-<?php 
+<?php
 
-if ( is_active_sidebar( 'Sidebar Widgets' ) ) { 
+if ( is_active_sidebar( 'Sidebar Widgets' ) ) {
 
 ?>
-    <aside id="sidebar" class="col-md-2">
+    <aside id="sidebar" class="col-sm-4 col-md-2">
 
 		<?php
 		if ( function_exists( 'dynamic_sidebar' ) && dynamic_sidebar( 'Sidebar Widgets' ) ) : else :
@@ -13,4 +13,4 @@ if ( is_active_sidebar( 'Sidebar Widgets' ) ) {
         <div class="clearfix"></div>
 	</aside>
 
-<?php }//if is_active_sidebar ?>  
+<?php }//if is_active_sidebar ?>
