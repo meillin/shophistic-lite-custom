@@ -29,41 +29,18 @@
                 <div class="container">
                     <div class="row">
 
-                        <div class="ql_logo_nav col-md-9 col-xs-12">
+                        <div class="ql_logo_nav col-sm-6">
 
                             <div class="logo_container">
-                                <?php get_template_part( "/templates/header-logo", "none" ); ?>
+                                <a href="/"><?php get_template_part( "/templates/header-logo", "none" ); ?> </a>
 
                                 <button id="ql_nav_btn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ql-navigation" aria-expanded="false">
-                                            <span class="sr-only">Toggle navigation</span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
                                 </button>
                             </div><!-- /logo_container -->
-
-                            <div class="collapse navbar-collapse" id="ql-navigation">
-                                <nav id="jqueryslidemenu" class="jqueryslidemenu navbar " role="navigation">
-                                    <?php
-                                    if ( has_nav_menu( 'menu-1' ) ){
-                                            wp_nav_menu( array(
-                                            'theme_location'  => 'menu-1',
-                                            'depth'             => 3,
-                                            'menu_class'        => 'nav navbar-nav',
-                                            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                                            'walker'            => new wp_bootstrap_navwalker()
-                                        ));
-                                    }else{
-                                        echo "<ul id='nav' class='nav navbar-nav'>";
-                                        wp_list_pages( array(
-                                            'title_li'     => ''
-                                            )
-                                        );
-                                        echo "</ul>";
-                                    };
-                                    ?>
-                                </nav>
-                            </div>
                             <div class="clearfix"></div>
 
                         </div><!-- col-md-8 -->
@@ -71,7 +48,7 @@
                         <?php
                         if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
                         ?>
-                            <div class="login_cart_wrap col-md-3 col-xs-12">
+                            <div class="login_cart_wrap col-sm-6">
 
                                 <div class="ql_cart_wrap">
                                     <a href="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>" class="ql_cart-btn">
@@ -102,6 +79,31 @@
                         <?php } //if WooCommerce active ?>
 
                     </div><!-- row-->
+
+                    <div class="row">
+                        <div class="collapse navbar-collapse" id="ql-navigation">
+                                <nav id="jqueryslidemenu" class="jqueryslidemenu navbar " role="navigation">
+                                    <?php
+                                    if ( has_nav_menu( 'menu-1' ) ){
+                                            wp_nav_menu( array(
+                                            'theme_location'  => 'menu-1',
+                                            'depth'             => 3,
+                                            'menu_class'        => 'nav navbar-nav',
+                                            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                                            'walker'            => new wp_bootstrap_navwalker()
+                                        ));
+                                    }else{
+                                        echo "<ul id='nav' class='nav navbar-nav'>";
+                                        wp_list_pages( array(
+                                            'title_li'     => ''
+                                            )
+                                        );
+                                        echo "</ul>";
+                                    };
+                                    ?>
+                                </nav>
+                            </div>
+                    </div>
 <!--
 <div class="row"><div class="col-xs-12">
 <form role="search" method="get" class="search-form" action="http://lazydaisy.dev/">

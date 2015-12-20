@@ -229,9 +229,11 @@
 
 
 
+				// Meilan added this for debugging purpose
+				window.$ = $;
 
 				//Sidebar Menu Function
-				$('#sidebar .widget ul:not(.product-categories) li ul').parent().addClass('hasChildren').append("<i class='fa fa-angle-down'></i>");
+				$('#sidebar .widget ul:not(.product-categories) li ul').parent().addClass('hasChildren').prepend("<i class='fa fa-angle-right'></i>");
 				var children;
 
 				// Meilan commonted out the disable the categories slideup and down effect
@@ -246,6 +248,7 @@
 					}
 				);
 				*/
+
 				//Footer Menu Function
 				$('footer .widget ul:not(.product-categories) li ul').parent().addClass('hasChildren').append("<i class='fa fa-angle-down'></i>");
 				var children;

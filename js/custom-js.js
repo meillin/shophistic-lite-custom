@@ -12,7 +12,6 @@
 			location.href = $(e.currentTarget).attr('href');
 		});
 
-
 	});
 
 })(jQuery);

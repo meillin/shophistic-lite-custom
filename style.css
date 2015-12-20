@@ -69,7 +69,7 @@ LESS Variables and Mixins
   transform: translate(0, 0);
 }
 .logo_container {
-  margin: 30px 20px 0 0;
+  margin: 20px 0 0;
   float: left;
   display: inline-block;
   position: relative;
@@ -129,7 +129,7 @@ Nav Menu
   overflow: visible;
 }
 #jqueryslidemenu {
-  margin: 40px 0;
+  margin: 0;
   display: block;
 }
 /*Top level list items*/
@@ -242,8 +242,9 @@ Login and Cart Buttons
 ---------------------------------------*/
 .login_cart_wrap {
   text-align: right;
-  margin-top: 40px;
+  margin: 30px 0 0 0;
   padding-left: 0;
+  z-index: 1;
 }
 .login_cart_wrap {
   opacity: 0;
@@ -1123,7 +1124,7 @@ Widgets
 }
 #sidebar .widget > ul li > a {
   color: #777777;
-  padding: 0.63636363636364em 0;
+  padding: 4px 0;
   display: block;
   font-weight: normal;
   -webkit-transition: all 200ms;
@@ -1154,8 +1155,8 @@ Widgets
 }
 #sidebar .hasChildren i {
   position: absolute;
-  top: 12px;
-  right: 5px;
+  top: 5px;
+  left: 5px;
   font-size: 1.16666666666667em;
 }
 #sidebar select {
@@ -3925,6 +3926,7 @@ ol.commentlist .comment-entry span.arrow_comment {
 }
 .widget_product_categories ul .cat-item {
   border-bottom: none !important;
+  font-size: 1rem;
 }
 .widget_product_categories ul .cat-item a,
 .widget_layered_nav ul li a {
@@ -3933,34 +3935,39 @@ ol.commentlist .comment-entry span.arrow_comment {
 }
 .widget_product_categories ul .cat-item a::before,
 .widget_layered_nav ul li a::before {
-  font-size: 14px;
-  font-size: 0.875rem;
-  display: inline-block;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 0;
-  color: #b3b3b3;
-  width: 14px;
-  height: 14px;
-  cursor: pointer;
+  /*
+	.font-size(14);
+	display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    content: "";
+	position: absolute;
+	top: 10px;
+	left: 0;
+	color: @gray-light2;
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+	*/
 }
-.widget_product_categories ul .cat-item a:hover::before,
-.widget_layered_nav ul li a:hover::before {
-  content: "";
+.widget_product_categories ul .cat-item a:hover .widget_layered_nav ul li a:hover {
+  /*
+	content: "";
+	*/
 }
 .widget_product_categories ul .cat-item.current-cat a,
 .widget_layered_nav ul li.chosen a {
   color: #383838 !important;
+  font-weight: bold!important;
 }
 .widget_product_categories ul .cat-item.current-cat a::before,
 .widget_product_categories ul li.chosen a::before {
-  content: "";
-  color: #383838 !important;
+  /*
+	content: "";
+	color: @gray-dark!important;
+	*/
 }
 /*Filter Widget
 =====================================================*/
@@ -5712,7 +5719,7 @@ input[type="submit"] {
   }
   /*
 	Header
-	========================================== 
+	==========================================
 	*/
   .logo_container {
     margin-bottom: 20px;
@@ -5720,14 +5727,9 @@ input[type="submit"] {
   #jqueryslidemenu {
     margin-bottom: 20px;
   }
-  .login_cart_wrap {
-    margin-top: 0;
-    margin-bottom: 30px;
-    text-align: center;
-  }
   /*
 	Content
-	========================================== 
+	==========================================
 	*/
   .content_background {
     padding: 40px;
@@ -5740,7 +5742,7 @@ input[type="submit"] {
   }
   /*
 	Sidebar
-	========================================== 
+	==========================================
 	*/
   #sidebar {
     padding-right: 0;
@@ -5754,7 +5756,7 @@ input[type="submit"] {
   }
   /*
 	WooCommerce
-	========================================== 
+	==========================================
 	*/
   .ql_main_images_btn {
     display: none;
@@ -5851,7 +5853,7 @@ input[type="submit"] {
 }
 @media (min-width: 768px) {
   .logo_container svg {
-    width: 150px;
+    width: 200px;
   }
 }
 @media (min-width: 1346px) {
