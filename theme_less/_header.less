@@ -1,3 +1,4 @@
+
 #header{
 	margin-bottom: 0;
 	position: relative;
@@ -9,6 +10,25 @@
 }
 #header .container{
 	position: relative;
+}
+
+.infomration_banner {
+	padding: 6px 0;
+	background-color: black;
+	font-size: 12px;
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		float: right;
+	}
+	li {
+		display: inline-block;
+		margin-left: 10px;
+	}
+	a {
+			color: #9a9a9a;
+	}
 }
 
 .ql_logo_nav{
@@ -88,6 +108,7 @@ Nav Menu
 #jqueryslidemenu{
 	margin: 0;
 	display: block;
+	background-color: white;
 }
 #jqueryslidemenu ul.nav{
 }
@@ -104,7 +125,7 @@ Nav Menu
 	text-transform: uppercase;
     .transition( all 200ms ease-in-out);
     color: @gray-light;
-    padding: 0.71428571428571em 1.07142857142857em;
+    padding: 14px 1.07142857142857em;
 }
 #jqueryslidemenu ul.nav > li > a:hover{
 	background-color: rgba(0,0,0,0.02);
@@ -229,7 +250,6 @@ Login and Cart Buttons
 .login_cart_wrap{
 	text-align: right;
 	margin: 30px 0 0 0;
-	padding-left: 0;
 	z-index: 1;
 }
 .login_cart_wrap{
@@ -249,7 +269,6 @@ Login and Cart Buttons
 }
 .ql_login-btn{
 	color: @gray-light;
-	text-transform: uppercase;
 	.font-size(14);
 	padding: 5px 25px;
 	margin: 5px 0;

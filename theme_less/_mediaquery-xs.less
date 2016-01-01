@@ -1,12 +1,15 @@
+.navbar-close {
+	display: none;
+}
 @media (max-width: @screen-xs-max) {
 
 
 	/*
 	Header
-	========================================== 
+	==========================================
 	*/
 	.logo_container{
-		margin-bottom: 20px;
+		margin: 10px 0 0 0;
 		position: relative;
 		display: block;
 		float: none;
@@ -14,15 +17,34 @@
 	}
 	#ql-navigation{
 		padding: 0;
+		position: fixed;
+		overflow: auto;
+		top: 0;
+		right: -100%;
+		width: 80%;
+		height: 100%;
+		z-index: 30;
+		background-color: white;
+		.transition( all 200ms ease-in-out);
+
+		.navbar-close {
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 0;
+			padding: 5px;
+			z-index: 1;
+			border: 1px solid gainsboro;
+			cursor: pointer;
+		}
+
 	}
 	#jqueryslidemenu{
-		margin-bottom: 20px;
-		margin-top: 0;
 		float: none;
+		margin: 30px 0;
 	}
 	#jqueryslidemenu ul.nav > li{
 		display: block;
-
 	}
 	#ql_nav_collapse{
 		padding: 0;
@@ -46,12 +68,24 @@
 		top: 0;
 		padding: 0;
 	}
+	#jqueryslidemenu ul.nav > li  {
+		> a {
+			background: none;
+			border-top: 1px solid gainsboro;
+		}
+	}
 	.dropdown:hover .dropdown-menu {
 	    display: none;
 	 }
 	 .dropdown.open:hover .dropdown-menu {
 	    display: block;
+
+	    &.active, .active {
+	    	font-weight: bold;
+	    }
 	 }
+
+
 	#jqueryslidemenu ul.nav > li > ul > li.menu-item-has-children{
 		display: block;
 		width: 100%;
@@ -63,11 +97,15 @@
 	}
 
 
-
 	.login_cart_wrap{
 		margin-top: 0;
-		margin-bottom: 30px;
+		margin-bottom: 10px;
 		text-align: center;
+		font-size: 12px;
+	}
+
+	.ql_login-btn {
+		font-size: 12px;
 	}
 
 
@@ -95,7 +133,7 @@
 
 	/*
 	Sidebar
-	========================================== 
+	==========================================
 	*/
 	#sidebar{
 		padding-right: 0;
@@ -115,7 +153,7 @@
 
 	/*
 	WooCommerce
-	========================================== 
+	==========================================
 	*/
 	#ql_woo_cart{
 		display: none;
@@ -146,8 +184,8 @@
 		width: 46.5%!important;
 		margin-right: 2.8% !important;
 	}
-	
-	
+
+
 	#ql_search_header .woocommerce-product-search {
 		width: 90%;
 	}
@@ -158,10 +196,10 @@
 		width: 30%;
 	}
 
-	
+
 	/*
 	Footer
-	========================================== 
+	==========================================
 	*/
 	.sub_footer p{
 		margin-bottom: 20px;

@@ -3,11 +3,17 @@ Footer
 ------------------------
 */
 .footer_wrap{
-	
+
 }
 #footer{
 	background-color: @gray-dark;
 	.font-size(14);
+	h1,h2,h3,h4,h5 {
+		color: white;
+	}
+	a {
+		color: #9a9a9a;
+	}
 }
 #footer p{
 	margin: 0;
@@ -27,7 +33,7 @@ Footer
 /*
 ==========================================
 Subfooter
-========================================== 
+==========================================
 */
 .sub_footer_wrap .container{
 	background-color: @gray-dark;
@@ -48,38 +54,62 @@ Subfooter
 }
 
 
-
+/*
+==========================================
+FACTS AND INFO
+==========================================
+ */
+.footer_middle {
+	ul {
+		padding: 0;
+		margin: 0 0 20px 0;
+	}
+}
 
 
 /*
 ==========================================
+Footer bottom
+==========================================
+ */
+.footer_bottom {
+	background-color: black;
+	padding: 10px;
+}
+
+/*
+==========================================
 Social Nav
-========================================== 
+==========================================
 */
 .nav_social{
 	position: relative;
-	text-align: center;
-	float: right;
+	h4 {
+		font-weight: 300;
+	}
 }
 .nav_social li{
-	text-align: center;
 	position: relative;
-	float: left;
-	margin-left: 10px;
+	display: inline-block;
+	&:not(:first-child) {
+		margin-left: 10px;
+	};
 }
 .nav_social li a{
 	padding: 0;
 	overflow: hidden;
 	display: block;
 	position: relative;
-	width: 35px;
-	height: 35px;
-	line-height: 35px;
-	color: @gray-light2;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	color: #383838;
 	.transition(background 200ms);
 	text-decoration: none;
 	text-align: center;
 	font-weight: normal;
+	border-radius: 100%;
+	background-color: white;
 }
 .nav_social li a:hover{
 	color: #fff;
@@ -97,13 +127,9 @@ Social Nav
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
     text-decoration: inherit;
-    font-size: 18px;
-    line-height: 1em;
-    width: 18px;
-    height: 18px;
-    color: #fff;
-    color: inherit;
+    font-size: 22px;
     text-decoration: none!important;
+    color: #383838;
 }
 .nav_social li a:hover::before{
 	color: #fff;
@@ -189,7 +215,7 @@ Social Nav
 /*
 ==========================================
 Payments Options
-========================================== 
+==========================================
 */
 .ql_payments_options ul{
 	padding-left: 0;
