@@ -1,10 +1,9 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
 
     <?php get_template_part( "post_image", "content" ); ?>
-
     <div class="post_content row">
         <div class="col-md-6">
-                <?php 
+                <?php
                 if ( is_singular() ) :
                     the_title( '<h1 class="post_title">', '</h1>' );
                 else :
@@ -18,7 +17,7 @@
 
         <div class="col-md-6">
             <div class="entry">
-                <?php 
+                <?php
                 if ( is_archive() || is_search() ) {
                     the_excerpt();
                 }else{
@@ -27,7 +26,7 @@
                 ?>
                 <div class="clearfix"></div>
             </div>
-            
+
         </div><!-- /col-md-6 -->
     </div><!-- /post_content -->
 

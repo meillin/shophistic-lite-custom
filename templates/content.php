@@ -1,6 +1,5 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
-    
-    <?php 
+    <?php
     if ( is_single() ) :
         the_title( '<h1 class="post_title">', '</h1>' );
     else :
@@ -9,7 +8,7 @@
     ?>
 
     <?php get_template_part( "post_image", "content" ); ?>
-    
+
 
 
     <div class="entry">

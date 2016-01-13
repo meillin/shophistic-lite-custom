@@ -41,7 +41,7 @@ endif;
 if ( ! function_exists( 'shophistic_lite_content_check_sidebar' ) ){
 	function shophistic_lite_content_check_sidebar() {
 		if ( is_active_sidebar( 'sidebar-widgets' ) ) {
-            return "col-sm-8 col-md-10";
+            return "col-sm-9 col-md-10";
         }else{
             return "col-sm-12";
         }

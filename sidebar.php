@@ -3,7 +3,7 @@
 if ( is_active_sidebar( 'Sidebar Widgets' ) ) {
 
 ?>
-    <aside id="sidebar" class="col-sm-4 col-md-2 hidden-xs">
+    <aside id="sidebar" class="col-sm-3 col-md-2 hidden-xs">
 
 		<?php
 		if ( function_exists( 'dynamic_sidebar' ) && dynamic_sidebar( 'Sidebar Widgets' ) ) : else :
